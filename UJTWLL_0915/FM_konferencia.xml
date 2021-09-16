@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<konferencia>
+	<cim>Heti meeting</cim>
+	<hallgatok>
+		<hallgato nev="Puskás Máté" lakcim="3525 Miskolc, Pesti út 5."/>
+		<hallgato nev="Tóth Imre" lakcim="8000 Győr, Arany János utca 54."/>
+	</hallgatok>
+	<helyszin>BOKIK</helyszin>
+	<eloado nev="Kovács László" adoszam="9825782372" lakcim="3433 Nyékládháza, Petőfi út 22."/>
+	<datum>2021.10.12.</datum>
+</konferencia>
