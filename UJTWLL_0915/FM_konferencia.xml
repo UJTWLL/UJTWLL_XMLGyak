@@ -7,6 +7,10 @@
 		<hallgato nev="Tóth Imre" lakcim="8000 Győr, Arany János utca 54."/>
 	</hallgatok>
 	<helyszin>BOKIK</helyszin>
-	<eloado nev="Kovács László" adoszam="9825782372" lakcim="3433 Nyékládháza, Petőfi út 22."/>
+	<eloado>
+		<nev>Kovács László</nev>
+		<adoszam>9825782372</adoszam>
+		<lakcim>3433 Nyékládháza, Petőfi út 22.</lakcim>
+	</eloado>
 	<datum>2021.10.12.</datum>
 </konferencia>
