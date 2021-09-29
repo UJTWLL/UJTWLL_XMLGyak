@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE konyvek SYSTEM "FM_konyv.dtd">
+
+<adatbazis>
+	<dolgozo id="656">
+		<nev>Riz Ottó</nev>
+		<fizetes>250000</fizetes>
+	</dolgozo>
+	<dolgozo id="926">
+		<nev>Mikorka Kálmán</nev>
+		<fizetes>350000</fizetes>
+	</dolgozo>
+	<dolgozo id="745">
+		<nev>Tóth Andrea</nev>
+		<fizetes>300000</fizetes>
+	</dolgozo>
+</adatbazis>
