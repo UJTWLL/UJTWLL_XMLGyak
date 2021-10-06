@@ -12,8 +12,8 @@
 <xs:complexType>
 <xs:sequence>
 <xs:element name="nap" type="xs:string"/>
-<xs:element name="tol" type="xs:unsignedShort"/>
-<xs:element name="ig" type="xs:unsignedShort"/>
+<xs:element name="tol" type="xs:integer"/>
+<xs:element name="ig" type="xs:integer"/>
 </xs:sequence>
 </xs:complexType>
 </xs:element>
