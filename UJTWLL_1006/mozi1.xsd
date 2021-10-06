@@ -5,19 +5,19 @@
 <xs:complexType>
 <xs:sequence>
 <xs:element name="film" maxOccurs="unbounded">
-<xs:attribute name="id" type="xs:integer"/>
-<xs:attribute name="mufaj" type="xs:string"/>
 <xs:complexType>
+<xs:attribute name="id" type="xs:integer" use="required"/>
+<xs:attribute name="mufaj" type="xs:string"/>
 <xs:sequence>
 <xs:element name="rendezo">
-<xs:attribute name="id" type="xs:integer"/>
+<xs:attribute name="id" type="xs:integer" use="required"/>
 <xs:attribute name="nev" type="xs:string"/>
 </xs:element>
 <xs:element name="szinesz">
-<xs:attribute name="id" type="xs:integer"/>
+<xs:attribute name="id" type="xs:integer" use="required" maxOccurs="unbounded"/>
 <xs:attribute name="nev" type="xs:string"/>
 <xs:element name="iro">
-<xs:attribute name="id" type="xs:integer"/>
+<xs:attribute name="id" type="xs:integer" use="required"/>
 </xs:sequence>
 </xs:complexType>
 </xs:element>        
