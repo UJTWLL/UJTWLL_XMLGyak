@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:simpleType name="arTipus">
+	<xs:restriction base="xs:positiveInteger"/>
+</xs:simpleType>
+
+<xs:simpleType name="sorozatszamTipus">
+	<xs:restriction base="xs:integer">
+		<xs:pattern value="[0-9]{8}"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="nevTipus">
+	<xs:restriction base="xs:string">
+		<xs:minLength value="2"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="nemTipus">
+	<xs:restriction base="xs:string">
+		<xs:pattern value="Férfi|férfi|Nő|nő"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="szigszamTipus">
+	<xs:restriction base="xs:string">
+		<xs:pattern value="[0-9]{6}[A-Z]{2}"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="logikaiTipus">
+	<xs:restriction base="xs:string">
+		<xs:pattern value="Igen|igen|Nem|nem"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="motorkodTipus">
+	<xs:restriction base="xs:string">
+		<xs:pattern value="([A-Z0-9])+"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="loeroTipus">
+	<xs:restriction base="xs:integer">
+		<xs:minInclusive value="1"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="nyomatekTipus">
+	<xs:restriction base="xs:integer">
+		<xs:minInclusive value="1"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="rendszamTipus">
+	<xs:restriction base="xs:string">
+		<xs:pattern value="[A-Z]{3}[0-9]{3}"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:element name="autok">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="auto" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ar" type="arTipus"/>
+						<xs:element name="kgfb" type="sorozatszamTipus"/>
+						<xs:element name="casco" type="sorozatszamTipus" minOccurs="0" maxOccurs="1"/>
+						<xs:element name="tulaj">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="nev">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="veznev" type="nevTipus"/>
+												<xs:element name="kernev" type="nevTipus"/>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element name="nem" type="nemTipus"/>
+								</xs:sequence>
+								<xs:attribute name="szigszam" type="szigszamTipus" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="gyarto">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="kozpont" type="nevTipus"/>
+									<xs:element name="igazgato" type="xs:string"/>
+									<xs:element name="premium" type="logikaiTipus"/>
+								</xs:sequence>
+								<xs:attribute name="marka" type="nevTipus" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="karosszeria">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="fenyezes" type="nevTipus"/>
+									<xs:element name="szinek" type="xs:string"/>
+									<xs:element name="matricak" type="nevTipus" minOccurs="0" maxOccurs="1"/>
+								</xs:sequence>
+								<xs:attribute name="alvazszam" type="sorozatszamTipus" use="required"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="motor">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="motorkod" type="motorkodTipus"/>
+									<xs:element name="loero" type="loeroTipus"/>
+									<xs:element name="nyomatek" type="nyomatekTipus"/>
+								</xs:sequence>
+								<xs:attribute name="motorszam" type="sorozatszamTipus" use="required"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="rendszam" type="rendszamTipus" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+
+</xs:schema>

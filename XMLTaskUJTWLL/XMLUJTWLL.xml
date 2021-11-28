@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<autok xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="XMLSchemaUJTWLL.xsd">
+	<auto rendszam="LFJ873">
+		<ar>3000000</ar>
+		<kgfb>87736587</kgfb>
+		<tulaj szigszam="893456TA">
+			<nev>
+				<veznev>Tóth</veznev>
+				<kernev>László</kernev>
+			</nev>
+			<nem>Férfi</nem>
+		</tulaj>
+		<gyarto marka="Mazda">
+			<kozpont>Japán</kozpont>
+			<igazgato>Akira Marumoto</igazgato>
+			<premium>Nem</premium>
+		</gyarto>
+		<karosszeria alvazszam="82733649">
+			<fenyezes>Matt</fenyezes>
+			<szinek>Vörös, fekete</szinek>
+		</karosszeria>
+		<motor motorszam="23347547">
+			<motorkod>MR70</motorkod>
+			<loero>150</loero>
+			<nyomatek>300</nyomatek>
+		</motor>
+	</auto>
+</autok>
