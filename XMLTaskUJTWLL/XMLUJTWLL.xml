@@ -19,7 +19,8 @@ xsi:noNamespaceSchemaLocation="XMLSchemaUJTWLL.xsd">
 		</gyarto>
 		<karosszeria alvazszam="82733649">
 			<fenyezes>Matt</fenyezes>
-			<szinek>Vörös, fekete</szinek>
+			<szin>Vörös</szin>
+			<szin>Fekete</szin>
 		</karosszeria>
 		<motor motorszam="23347547">
 			<motorkod>MR70</motorkod>
