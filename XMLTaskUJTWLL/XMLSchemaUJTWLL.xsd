@@ -100,7 +100,7 @@
 								<xs:sequence>
 									<xs:element name="fenyezes" type="nevTipus"/>
 									<xs:element name="szin" type="nevTipus" maxOccurs="unbounded"/>
-									<xs:element name="matricak" type="nevTipus" minOccurs="0" maxOccurs="1"/>
+									<xs:element name="matrica" type="nevTipus" minOccurs="0" maxOccurs="1"/>
 								</xs:sequence>
 								<xs:attribute name="alvazszam" type="sorozatszamTipus" use="required"/>
 							</xs:complexType>

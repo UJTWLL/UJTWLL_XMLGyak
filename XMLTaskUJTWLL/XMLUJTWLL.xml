@@ -28,4 +28,32 @@ xsi:noNamespaceSchemaLocation="XMLSchemaUJTWLL.xsd">
 			<nyomatek>300</nyomatek>
 		</motor>
 	</auto>
+	<auto rendszam="LFJ873">
+		<ar>3000000</ar>
+		<kgfb>87736587</kgfb>
+		<casco>66234891</casco>
+		<tulaj szigszam="893456TA">
+			<nev>
+				<veznev>Tóth</veznev>
+				<kernev>László</kernev>
+			</nev>
+			<nem>Férfi</nem>
+		</tulaj>
+		<gyarto marka="Mazda">
+			<kozpont>Japán</kozpont>
+			<igazgato>Akira Marumoto</igazgato>
+			<premium>Nem</premium>
+		</gyarto>
+		<karosszeria alvazszam="82733649">
+			<fenyezes>Matt</fenyezes>
+			<szin>Vörös</szin>
+			<szin>Fekete</szin>
+			<matrica>Lángnyelv</matrica>
+		</karosszeria>
+		<motor motorszam="23347547">
+			<motorkod>MR70</motorkod>
+			<loero>150</loero>
+			<nyomatek>300</nyomatek>
+		</motor>
+	</auto>
 </autok>
