@@ -19,16 +19,10 @@ import org.xml.sax.helpers.DefaultHandler;
 public class DOMReadUJTWLL{
     public static void main(String[] args){
         try{
-            //Dokumentumolvasó létrehozása
             SAXParserFactory saxParserFactory = SAXParserFactory.newInstance();
-
-            //SAX értelmező példányosítása, a gyár állítja elő a SAX elemzőt
             SAXParser saxParser = saxParserFactory.newSAXParser();
-
-            //saját eseménykezelő objektum létrehozása
             SaxHandler handler = new SaxHandler();
 
-            //dokumentum értelmezésének indítása
             saxParser.parse(new File("XMLUJTWLL.xml"), handler);
         } catch (ParserConfigurationException | SAXException | IOException e){
             e.printStackTrace();
@@ -36,7 +30,6 @@ public class DOMReadUJTWLL{
     }
 }
 
-//tartalomkezelő keret létrehozása, esemény- és hibakezelő metódusok definiálása
 class SaxHandler extends DefaultHandler{
     private int indent = 0;
 
@@ -62,23 +55,20 @@ class SaxHandler extends DefaultHandler{
         }
     }
 
-    //Eseménykezelő metódusok létrehozása, startElement metódus újraimplementálása
     @Override
-    //Elem kezdete és vége
     public void startElement(String uri, String localName, String qName, Attributes attributes){
         indent++;
         indent();
         System.out.println(qName + formatAttributes(attributes) + " start");
     }
 
-    @Override //endElement metódust újraimplementáljuk
+    @Override
     public void endElement(String uri, String localName, String qName){
         indent();
         indent--;
         System.out.println(qName + " end");
     }
 
-    //Szövegelem feldolgozása, characters metódus újraimplementálása
     @Override
     public void characters(char ch[], int start, int length){
         String chars = new String(ch, start, length).trim();
