@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="studentUJTWLL.xsd">
+	<student id="01">
+		<vezeteknev>Ferencsik</vezeteknev>
+		<keresztnev>Márk</keresztnev>
+		<becenev>Márkócza</becenev>
+		<kor>22</kor>
+	</student>
+	<student id="02">
+		<vezeteknev>Ötvös</vezeteknev>
+		<keresztnev>Ádám Balázs</keresztnev>
+		<becenev>Ádó</becenev>
+		<kor>21</kor>
+	</student>
+	<student id="03">
+		<vezeteknev>Horanek</vezeteknev>
+		<keresztnev>Dávid</keresztnev>
+		<becenev>Dave</becenev>
+		<kor>21</kor>
+	</student>
+</class>
