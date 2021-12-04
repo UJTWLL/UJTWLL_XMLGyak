@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<nevjegykartyak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="FM_nevjegykartya.xsd">
+	<nevjegykartya id="1">
+		<nev>Ferencsik Márk</nev>
+		<ceg>
+			<nev>simpleSoft Kft.</nev>
+			<cim>
+				<irsz>3525</irsz>
+				<varos>Miskolc</varos>
+				<utca>Szentpáli</utca>
+				<hsz>1</hsz>
+			</cim>
+			<tel>0646740640</tel>
+			<weblap>https://simplesoft.hu/</weblap>
+		</ceg>
+	</nevjegykartya>
+	<nevjegykartya id="2">
+		<nev>Kokeró Károly</nev>
+		<ceg>
+			<nev>evoSoft Hungary Kft.</nev>
+			<cim>
+				<irsz>3525</irsz>
+				<varos>Miskolc</varos>
+				<utca>Arany János</utca>
+				<hsz>1</hsz>
+			</cim>
+			<tel>0646501120</tel>
+			<weblap>https://www.evosoft.hu/</weblap>
+		</ceg>
+	</nevjegykartya>
+</nevjegykartyak>
