@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!DOCTYPE konyvek SYSTEM "FM_konyv.dtd">
+<!DOCTYPE konyvek SYSTEM "FM_adatbazis.dtd">
 
 <adatbazis>
 	<dolgozo id="656">
