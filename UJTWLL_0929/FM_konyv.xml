@@ -3,27 +3,24 @@
 <!DOCTYPE konyvek SYSTEM "FM_konyv.dtd">
 
 <konyvek>
-    <konyv>
+    <konyv id="58">
         <cim>C biblia</cim>
         <kiadas>2010</kiadas>
         <kiado>Mozaik</kiado>
-        <id>58</id>
         <szerzo>Moe Lester</szerzo>
     </konyv>
-    <konyv>
+    <konyv id="21">
         <cim>Szövegbányászat és mesterséges intelligencia</cim>
         <kiadas>2016</kiadas>
         <kiado>Bookline</kiado>
-        <id>21</id>
         <szerzo>Sebők Miklós</szerzo>
         <szerzo>Ring Orsolya</szerzo>
         <szerzo>Máté Ákos</szerzo>
     </konyv>
-    <konyv>
+    <konyv id="83">
         <cim>Java</cim>
         <kiadas>2010</kiadas>
         <kiado>Booknet</kiado>
-        <id>83</id>
         <szerzo>Barry Burd</szerzo>
     </konyv>
 <konyvek>
