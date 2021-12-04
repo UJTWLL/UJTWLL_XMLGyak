@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<macskak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="macskakUJTWLL.xsd">
+    <macska id="01">
+        <nev>Hamu</nev>
+        <kor>4</kor>
+        <fajta>Burma</fajta>
+    </macska>
+    <macska id="02">
+        <nev>Furcsi</nev>
+        <kor>9</kor>
+        <fajta>Bengáli</fajta>
+    </macska>
+    <macska id="03">
+        <nev>Tigris</nev>
+        <kor>6</kor>
+        <fajta>Bengáli</fajta>
+    </macska>
+</macskak>
