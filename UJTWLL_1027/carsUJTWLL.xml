@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<cars>
+    <supercars company="Ferrari">
+        <carname type="formula one">Ferrari 312T</carname>
+        <carname type="sports">Ferrari F40</carname>
+    </supercars>
+    <supercars company="Lamborghini">
+        <carname>Lamborghini Gallardo</carname>
+        <carname>Lamborghini Murcielago</carname>
+        <carname>Lamborghini Huracan</carname>
+    </supercars>
+    <luxurycars company="Bentley">
+        <carname>Bentley Continental</carname>
+        <carname>Bentley Flying Spur</carname>
+    </luxurycars>
+</cars>
