@@ -2,44 +2,29 @@
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-<xsl:template match="/">
-<html>
-<body>
-    <h2>Hallgatok choose</h2>
-    <table border="1">
-        <tr bgcolor="#ffff00">
-            <th>ID</th>
-            <th>Vezeteknev</th>
-            <th>Keresztnev</th>
-            <th>Becenev</th>
-            <th>Fizetes</th>
-            <th>Fokozat</th>
-        </tr>
-        <xsl:for-each select="class/student">
-        <tr>
-            <td><xsl:value-of select="@id"/></td>
-            <td><xsl:value-of select="vezeteknev"/></td>
-            <td><xsl:value-of select="keresztnev"/></td>
-            <td><xsl:value-of select="becenev"/></td>
-            <td><xsl:value-of select="fizetes"/></td>
-            <xsl:choose>
-                <xsl:when test="fizetes>500000">
-                    <td>High</td>
-                </xsl:when>
-                <xsl:when test="not(fizetes>500000)">
-                    <xsl:when test="fizetes>250000">
-                        <td>Medium</td>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <td>Low</td>
-                    </xsl:otherwise>
-                </xsl:when>
-            </xsl:choose>
-        </tr>
-        </xsl:for-each>
-    </table>
-</body>
-</html>
-</xsl:template>
+    <xsl:template match="/">
+        <html>
+            <body>
+                <table border="1">
+                    <tr bgcolor="#ffff00">
+                        <th>Márka</th>
+                        <th>Darab</th>
+                    </tr>
+                    <tr>
+                        <td>Fiat</td>
+                        <td><xsl:value-of select="count(//autok/auto[tipus='Fiat'])"/></td>
+                    </tr>
+                    <tr>
+                        <td>Skoda</td>
+                        <td><xsl:value-of select="count(//autok/auto[tipus='Skoda'])"/></td>
+                    </tr>
+                    <tr>
+                        <td>Opel</td>
+                        <td><xsl:value-of select="count(//autok/auto[tipus='Opel'])"/></td>
+                    </tr>
+                </table>
+            </body>
+        </html>
+    </xsl:template>
 
 </xsl:stylesheet>
