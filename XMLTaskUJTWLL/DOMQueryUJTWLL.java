@@ -49,14 +49,14 @@ public class DOMQueryUJTWLL{
                     String kernev = kernevNode.getTextContent();
                     Node nemNode = auto.getElementsByTagName("nem").item(0);
                     String nem = nemNode.getTextContent();
-                    Element gyarto = (Element) auto.getElementsByTagName("gyarto").item(0);
-                    String marka = gyarto.getAttribute("marka");
-                    Node kozpontNode = auto.getElementsByTagName("kozpont").item(0);
-                    String kozpont = kozpontNode.getTextContent();
-                    Node igazgatoNode = auto.getElementsByTagName("igazgato").item(0);
-                    String igazgato = igazgatoNode.getTextContent();
-                    Node premiumNode = auto.getElementsByTagName("premium").item(0);
-                    String premium = premiumNode.getTextContent();
+                    Element garazs = (Element) auto.getElementsByTagName("garazs").item(0);
+                    String cim = garazs.getAttribute("cim");
+                    Node gtulajNode = auto.getElementsByTagName("garazstulaj").item(0);
+                    String gtulaj = gtulajNode.getTextContent();
+                    Node anyagNode = auto.getElementsByTagName("anyag").item(0);
+                    String anyag = anyagNode.getTextContent();
+                    Node biztNode = auto.getElementsByTagName("bizt").item(0);
+                    String bizt = biztNode.getTextContent();
                     Element karosszeria = (Element) auto.getElementsByTagName("karosszeria").item(0);
                     String alvazszam = karosszeria.getAttribute("alvazszam");
                     Node fenyezesNode = auto.getElementsByTagName("fenyezes").item(0);
@@ -83,23 +83,23 @@ public class DOMQueryUJTWLL{
                     System.out.printf("Rendszam: %s%n", rsz);
                     System.out.printf("KGFB: %s%n", kgfb);
                     if(cascoNode != null){
-                        System.out.printf("Casco: %s%n", casco);;
+                        System.out.printf("Casco: %s%n", casco);
                     }
                     System.out.printf("Tulajdonos: %18s: %s%n", "Szemelyi szam", szigszam);
                     System.out.printf("%30s: %s%n", "Vezeteknev", veznev);
                     System.out.printf("%30s: %s%n", "Keresztnev", kernev);
                     System.out.printf("%30s: %s%n", "Nem", nem);
-                    System.out.printf("Gyarto: %22s: %s%n", "Marka", marka);
-                    System.out.printf("%30s: %s%n", "Kozpont", kozpont);
-                    System.out.printf("%30s: %s%n", "Igazgato", igazgato);
-                    System.out.printf("%30s: %s%n", "Premium", premium);
+                    System.out.printf("Garazs: %22s: %s%n", "Cim", cim);
+                    System.out.printf("%30s: %s%n", "Garazsulaj", gtulaj);
+                    System.out.printf("%30s: %s%n", "Anyag", anyag);
+                    System.out.printf("%30s: %s%n", "Biztositva", bizt);
                     System.out.printf("Karosszeria: %17s: %s%n", "Alvazszam", alvazszam);
                     System.out.printf("%30s: %s%n", "Fenyezes", fenyezes);
                     for(int k = 0; k < szinekNode.getLength(); k++){
                         System.out.printf("%30s: %s%n", "Szin", szinek[k]);
                     }
                     if(matricaNode != null){
-                        System.out.printf("%30s: %s%n", "Matrica", matrica);;
+                        System.out.printf("%30s: %s%n", "Matrica", matrica);
                     }
                     System.out.printf("Motor: %23s: %s%n", "Motorszam", motorszam);
                     System.out.printf("%30s: %s%n", "Motorkod", motorkod);

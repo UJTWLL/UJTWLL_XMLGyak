@@ -68,7 +68,7 @@
 					<xs:sequence>
 						<xs:element name="ar" type="arTipus"/>
 						<xs:element name="kgfb" type="sorozatszamTipus"/>
-						<xs:element name="casco" type="sorozatszamTipus" minOccurs="0" maxOccurs="1"/>
+						<xs:element name="casco" type="sorozatszamTipus" minOccurs="0"/>
 						<xs:element name="tulaj">
 							<xs:complexType>
 								<xs:sequence>
@@ -85,14 +85,14 @@
 								<xs:attribute name="szigszam" type="szigszamTipus" use="required"/>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="gyarto">
+						<xs:element name="garazs">
 							<xs:complexType>
 								<xs:sequence>
-									<xs:element name="kozpont" type="nevTipus"/>
-									<xs:element name="igazgato" type="xs:string"/>
-									<xs:element name="premium" type="logikaiTipus"/>
+									<xs:element name="garazstulaj" type="nevTipus"/>
+									<xs:element name="anyag" type="nevTipus"/>
+									<xs:element name="bizt" type="logikaiTipus" minOccurs="0"/>
 								</xs:sequence>
-								<xs:attribute name="marka" type="nevTipus" use="required"/>
+								<xs:attribute name="cim" type="nevTipus" use="required"/>
 							</xs:complexType>
 						</xs:element>
 						<xs:element name="karosszeria">
@@ -100,7 +100,7 @@
 								<xs:sequence>
 									<xs:element name="fenyezes" type="nevTipus"/>
 									<xs:element name="szin" type="nevTipus" maxOccurs="unbounded"/>
-									<xs:element name="matrica" type="nevTipus" minOccurs="0" maxOccurs="1"/>
+									<xs:element name="matrica" type="nevTipus" minOccurs="0"/>
 								</xs:sequence>
 								<xs:attribute name="alvazszam" type="sorozatszamTipus" use="required"/>
 							</xs:complexType>

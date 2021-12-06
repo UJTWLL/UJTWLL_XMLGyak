@@ -12,11 +12,11 @@ xsi:noNamespaceSchemaLocation="XMLSchemaUJTWLL.xsd">
 			</nev>
 			<nem>Férfi</nem>
 		</tulaj>
-		<gyarto marka="Mazda">
-			<kozpont>Japán</kozpont>
-			<igazgato>Akira Marumoto</igazgato>
-			<premium>Nem</premium>
-		</gyarto>
+		<garazs cim="3525 Miskolc Arany János utca 6">
+			<garazstulaj>Kiss János</garazstulaj>
+			<anyag>Fa</anyag>
+			<bizt>Nem</bizt>
+		</garazs>
 		<karosszeria alvazszam="82733649">
 			<fenyezes>Matt</fenyezes>
 			<szin>Vörös</szin>
@@ -39,11 +39,11 @@ xsi:noNamespaceSchemaLocation="XMLSchemaUJTWLL.xsd">
 			</nev>
 			<nem>Férfi</nem>
 		</tulaj>
-		<gyarto marka="Mazda">
-			<kozpont>Japán</kozpont>
-			<igazgato>Akira Marumoto</igazgato>
-			<premium>Nem</premium>
-		</gyarto>
+		<garazs cim="3433 Nyékládháza Fő utca 23">
+			<garazstulaj>Szabó Margit</garazstulaj>
+			<anyag>Beton</anyag>
+			<bizt>Nem</bizt>
+		</garazs>
 		<karosszeria alvazszam="82733649">
 			<fenyezes>Matt</fenyezes>
 			<szin>Vörös</szin>
