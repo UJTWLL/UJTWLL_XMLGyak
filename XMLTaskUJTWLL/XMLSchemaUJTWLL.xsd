@@ -83,6 +83,7 @@
 									<xs:element name="nem" type="nemTipus"/>
 								</xs:sequence>
 								<xs:attribute name="szigszam" type="szigszamTipus" use="required"/>
+								<xs:attribute name="rendszam" type="rendszamTipus" use="required"/>
 							</xs:complexType>
 						</xs:element>
 						<xs:element name="garazs">
@@ -93,6 +94,7 @@
 									<xs:element name="bizt" type="logikaiTipus" minOccurs="0"/>
 								</xs:sequence>
 								<xs:attribute name="cim" type="nevTipus" use="required"/>
+								<xs:attribute name="rendszam" type="rendszamTipus" use="required"/>
 							</xs:complexType>
 						</xs:element>
 						<xs:element name="karosszeria">
@@ -103,6 +105,7 @@
 									<xs:element name="matrica" type="nevTipus" minOccurs="0"/>
 								</xs:sequence>
 								<xs:attribute name="alvazszam" type="sorozatszamTipus" use="required"/>
+								<xs:attribute name="rendszam" type="rendszamTipus" use="required"/>
 							</xs:complexType>
 						</xs:element>
 						<xs:element name="motor">
@@ -113,6 +116,7 @@
 									<xs:element name="nyomatek" type="nyomatekTipus"/>
 								</xs:sequence>
 								<xs:attribute name="motorszam" type="sorozatszamTipus" use="required"/>
+								<xs:attribute name="rendszam" type="rendszamTipus" use="required"/>
 							</xs:complexType>
 						</xs:element>
 					</xs:sequence>
@@ -121,6 +125,26 @@
 			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
+	<xs:key name="rszKey">
+		<xs:selector xpath="auto" />
+		<xs:field xpath="@rendszam" />
+	</xs:key>
+	<xs:keyref name="tulajRef" refer="rszKey">
+		<xs:selector xpath="tulaj" />
+		<xs:field xpath="@rendszam" />
+	</xs:keyref>
+	<xs:keyref name="garazsRef" refer="rszKey">
+		<xs:selector xpath="garazs" />
+		<xs:field xpath="@rendszam" />
+	</xs:keyref>
+	<xs:keyref name="karosszeriaRef" refer="rszKey">
+		<xs:selector xpath="karosszeria" />
+		<xs:field xpath="@rendszam" />
+	</xs:keyref>
+	<xs:keyref name="motorRef" refer="rszKey">
+		<xs:selector xpath="motor" />
+		<xs:field xpath="@rendszam" />
+	</xs:keyref>
 </xs:element>
 
 </xs:schema>

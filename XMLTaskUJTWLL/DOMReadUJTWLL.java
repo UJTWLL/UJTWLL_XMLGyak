@@ -7,9 +7,6 @@ import java.io.IOException;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
-/*import javax.xml.validation.Schema;
-import javax.xml.validation.SchemaFactory;*/
-import javax.xml.transform.TransformerFactory;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
@@ -19,10 +16,16 @@ import org.xml.sax.helpers.DefaultHandler;
 public class DOMReadUJTWLL{
     public static void main(String[] args){
         try{
+            //Dokumentumolvasó létrehozása
             SAXParserFactory saxParserFactory = SAXParserFactory.newInstance();
+
+            //SAX értelmező példányosítása
             SAXParser saxParser = saxParserFactory.newSAXParser();
+
+            //Eseménykezelő létrehozása
             SaxHandler handler = new SaxHandler();
 
+            //Fájl beolvasása értelmezésre
             saxParser.parse(new File("XMLUJTWLL.xml"), handler);
         } catch (ParserConfigurationException | SAXException | IOException e){
             e.printStackTrace();
@@ -33,6 +36,7 @@ public class DOMReadUJTWLL{
 class SaxHandler extends DefaultHandler{
     private int indent = 0;
 
+    //Attribútumok értelmezése
     private String formatAttributes(Attributes attributes){
         int attrLength = attributes.getLength();
         if(attrLength == 0){
@@ -49,12 +53,14 @@ class SaxHandler extends DefaultHandler{
         return sb.toString();
     }
 
+    //Elem behúzásának meghatározása
     private void indent(){
         for(int i = 0; i < indent; i++){
             System.out.print("  ");
         }
     }
 
+    //Element kezdetének jelzése
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes){
         indent++;
@@ -62,6 +68,7 @@ class SaxHandler extends DefaultHandler{
         System.out.println(qName + formatAttributes(attributes) + " start");
     }
 
+    //Element végének jelzése
     @Override
     public void endElement(String uri, String localName, String qName){
         indent();
@@ -69,8 +76,9 @@ class SaxHandler extends DefaultHandler{
         System.out.println(qName + " end");
     }
 
+    //Tényleges element tartalom kiíratása
     @Override
-    public void characters(char ch[], int start, int length){
+    public void characters(char[] ch, int start, int length){
         String chars = new String(ch, start, length).trim();
         if(!chars.isEmpty()){
             indent++;

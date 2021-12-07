@@ -5,52 +5,52 @@ xsi:noNamespaceSchemaLocation="XMLSchemaUJTWLL.xsd">
 	<auto rendszam="LFJ873">
 		<ar>3000000</ar>
 		<kgfb>87736587</kgfb>
-		<tulaj szigszam="893456TA">
+		<tulaj szigszam="893456TA" rendszam="LFJ873">
 			<nev>
 				<veznev>Tóth</veznev>
 				<kernev>László</kernev>
 			</nev>
 			<nem>Férfi</nem>
 		</tulaj>
-		<garazs cim="3525 Miskolc Arany János utca 6">
+		<garazs cim="3525 Miskolc Arany János utca 6" rendszam="LFJ873">
 			<garazstulaj>Kiss János</garazstulaj>
 			<anyag>Fa</anyag>
 			<bizt>Nem</bizt>
 		</garazs>
-		<karosszeria alvazszam="82733649">
+		<karosszeria alvazszam="82733649" rendszam="LFJ873">
 			<fenyezes>Matt</fenyezes>
 			<szin>Vörös</szin>
 			<szin>Fekete</szin>
 		</karosszeria>
-		<motor motorszam="23347547">
+		<motor motorszam="23347547" rendszam="LFJ873">
 			<motorkod>MR70</motorkod>
 			<loero>150</loero>
 			<nyomatek>300</nyomatek>
 		</motor>
 	</auto>
-	<auto rendszam="LFJ873">
+	<auto rendszam="HOE384">
 		<ar>3000000</ar>
 		<kgfb>87736587</kgfb>
 		<casco>66234891</casco>
-		<tulaj szigszam="893456TA">
+		<tulaj szigszam="893456TA" rendszam="HOE384">
 			<nev>
 				<veznev>Tóth</veznev>
 				<kernev>László</kernev>
 			</nev>
 			<nem>Férfi</nem>
 		</tulaj>
-		<garazs cim="3433 Nyékládháza Fő utca 23">
+		<garazs cim="3433 Nyékládháza Fő utca 23" rendszam="HOE384">
 			<garazstulaj>Szabó Margit</garazstulaj>
 			<anyag>Beton</anyag>
 			<bizt>Nem</bizt>
 		</garazs>
-		<karosszeria alvazszam="82733649">
+		<karosszeria alvazszam="82733649" rendszam="HOE384">
 			<fenyezes>Matt</fenyezes>
 			<szin>Vörös</szin>
 			<szin>Fekete</szin>
 			<matrica>Lángnyelv</matrica>
 		</karosszeria>
-		<motor motorszam="23347547">
+		<motor motorszam="23347547" rendszam="HOE384">
 			<motorkod>MR70</motorkod>
 			<loero>150</loero>
 			<nyomatek>300</nyomatek>
